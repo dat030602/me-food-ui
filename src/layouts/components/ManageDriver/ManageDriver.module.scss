@@ -1,0 +1,144 @@
+.grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.container {
+    padding: 48px 40px;
+}
+
+.title {
+    margin-bottom: 20px;
+    & h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+.name {
+    font-size: 18px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    text-align: left;
+}
+.type {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+span {
+    display: block;
+}
+.btn-submit {
+    display: flex;
+    float: right;
+    margin-top: 32px;
+    & .btn {
+        padding: 8px 32px;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--primary-color);
+        border: none;
+        font-size: 18px;
+    }
+}
+
+.content-wrapper {
+    width: 100%;
+    & table {
+        width: 100%;
+    }
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+th {
+    border-bottom: 1px solid black;
+}
+td.submit,
+td.more {
+    color: var(--primary-color);
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.footer {
+    padding: 16px;
+}
+.btn-modal {
+    width: 100%;
+    padding: 0 8px;
+    height: 40px;
+    & div {
+        font-weight: 500;
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all ease;
+    }
+}
+.footer {
+    height: 96px;
+    background-color: #fff;
+    width: 100%;
+}
+.separate {
+    width: 100%;
+    height: 1px;
+    background: hsla(0, 0, 0, 0.1);
+    margin-top: 29px;
+    margin-bottom: 32px;
+}
+
+.separate-big {
+    width: 100%;
+    height: 6px;
+    background: hsla(0, 0, 0, 0.1);
+    margin-top: 29px;
+    margin-bottom: 32px;
+}
+.close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.content-wrapper-modal {
+    padding: 16px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    width: 100%;
+    z-index: 13;
+    background-color: #fff;
+}
+.item-modal {
+    flex: 1 0 33.333333333%;
+    width: 100%;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    & > .dish {
+        display: flex;
+        & > .name-dish {
+            width: 80%;
+        }
+        & > .price-dish {
+            width: 20%;
+            text-align: right;
+        }
+    }
+}

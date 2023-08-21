@@ -1,0 +1,27 @@
+.img {
+    width: 100%;
+    & img {
+        border-radius: 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.item{
+    flex: 1 0 25%;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+.name {
+    font-size: 18px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.more {
+    & > .type {
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        font-weight: 400;
+    }
+}

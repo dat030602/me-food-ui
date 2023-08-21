@@ -1,0 +1,70 @@
+.grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.container {
+    padding: 48px 40px 0 40px;
+}
+.address {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    & a {
+        color: #00a5cf;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+.img {
+    margin: 0 8px;
+    & img {
+        width: 14px;
+        max-height: 14px;
+    }
+}
+.title {
+    font-size: 36px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    margin-bottom: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(28, 28, 28);
+}
+.thuc-don{
+    font-size: 28px;
+}
+.type {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.contact{
+    margin-top: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-submit {
+    display: flex;
+    float: left;
+    margin-top: 20px;
+    & .btn {
+        padding: 8px 32px;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--primary-color);
+        border: none;
+        font-size: 18px;
+    }
+}

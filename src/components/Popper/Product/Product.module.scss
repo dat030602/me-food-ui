@@ -1,0 +1,64 @@
+.title {
+    font-size: 36px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    margin-bottom: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(28, 28, 28);
+}
+.thuc-don {
+    font-size: 28px;
+}
+.type {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s all ease-in-out;
+    margin-top: 32px;
+}
+.list {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.description {
+    display: block;
+    margin-top: 12px;
+    max-height: 52px;
+    overflow: hidden;
+    & img {
+        margin-right: 8px;
+        max-height: 20px;
+    }
+    & span {
+        display: block;
+    }
+}
+.open {
+    max-height: 99999px;
+    transition: 0.3s max-height ease-in-out;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-submit {
+    display: flex;
+    float: right;
+    & .btn {
+        padding: 8px 32px;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--primary-color);
+        border: none;
+        font-size: 18px;
+    }
+}

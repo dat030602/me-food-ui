@@ -1,0 +1,20 @@
+.title{
+    font-size: 36px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    margin-bottom: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(28, 28, 28);
+}
+
+.par{
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.icon{
+    color: var(--primary-color);
+    margin-right: 8px;
+}

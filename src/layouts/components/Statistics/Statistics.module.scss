@@ -1,0 +1,55 @@
+.grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.container {
+    padding: 48px 40px;
+}
+
+.title {
+    margin-bottom: 20px;
+    & h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+.name {
+    font-size: 18px;
+    line-height: 1.33333333;
+    font-weight: 500;
+    text-align: left;
+}
+
+span {
+    display: block;
+}
+
+.content-wrapper {
+    width: 100%;
+    & table {
+        width: 100%;
+    }
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border: 1.5px solid white;
+    background-color: #6AF2F0;
+}
+th {
+    border-bottom: 1px solid white;
+}
+td.submit,
+td.more {
+    color: var(--primary-color);
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
