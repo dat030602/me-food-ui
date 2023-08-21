@@ -27,7 +27,7 @@ function Contact() {
     useEffect(() => {
         if (localStorage.getItem('roll') == 1 || localStorage.getItem('roll') == 3) {
             const abortController = new AbortController();
-            fetch(`https://me-food-api.onrender.com//contact/getBranch/${id}`, {
+            fetch(`https://me-food-api.onrender.com/contact/getBranch/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ function Contact() {
 
     const handleOnClickReset = () => {
         if (testTransaction)
-            fetch(`https://me-food-api.onrender.com//contact/getDateline/${data[0].MaHopDong}`, {
+            fetch(`https://me-food-api.onrender.com/contact/getDateline/${data[0].MaHopDong}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function Contact() {
                     alert('Successful');
                 });
         else
-            fetch(`https://me-food-api.onrender.com//contact/getDatelineFix/${data[0].MaHopDong}`, {
+            fetch(`https://me-food-api.onrender.com/contact/getDatelineFix/${data[0].MaHopDong}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ function Contact() {
         }
     }, [dayEnd]);
     const handleOnClickUpdate = () => {
-        fetch(`https://me-food-api.onrender.com//contact/updateDateline/${data[0].MaHopDong}`, {
+        fetch(`https://me-food-api.onrender.com/contact/updateDateline/${data[0].MaHopDong}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ function Contact() {
             })
             .then((data) => {
                 if (data.returnValue === 0) {
-                    fetch(`https://me-food-api.onrender.com//contact/getBranch/${id}`, {
+                    fetch(`https://me-food-api.onrender.com/contact/getBranch/${id}`, {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',
@@ -236,7 +236,7 @@ function Contact() {
                                     className={cx('btn')}
                                     style={{ backgroundColor: 'red' }}
                                     onClick={() => {
-                                        fetch(`https://me-food-api.onrender.com//contact/deleteContract/${data[0].MaHopDong}`, {
+                                        fetch(`https://me-food-api.onrender.com/contact/deleteContract/${data[0].MaHopDong}`, {
                                             method: 'DELETE',
                                             headers: {
                                                 'Content-Type': 'application/json',
@@ -267,7 +267,7 @@ function Contact() {
                                 <Button
                                     className={cx('btn')}
                                     onClick={() => {
-                                        fetch('https://me-food-api.onrender.com//contact/submit', {
+                                        fetch('https://me-food-api.onrender.com/contact/submit', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ function ManageDriver() {
     const [keyIndex, setKeyIndex] = useState(-1);
     useEffect(() => {
         if (localStorage.getItem('roll') == 2)
-            fetch('https://me-food-api.onrender.com//manage-driver/getDonHang', {
+            fetch('https://me-food-api.onrender.com/manage-driver/getDonHang', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function ManageDriver() {
     const [name, setName] = useState();
     const [listMonAn, setListMonAn] = useState();
     const hanldeOnClickDetail = (pdh) => {
-        fetch('https://me-food-api.onrender.com//manage-driver/getTenKH', {
+        fetch('https://me-food-api.onrender.com/manage-driver/getTenKH', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function ManageDriver() {
             .then((data) => {
                 setName(data);
             });
-        fetch('https://me-food-api.onrender.com//manage-driver/getDetail', {
+        fetch('https://me-food-api.onrender.com/manage-driver/getDetail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -116,7 +116,7 @@ function ManageDriver() {
                                                                 className={cx('submit')}
                                                                 onClick={() => {
                                                                     fetch(
-                                                                        'https://me-food-api.onrender.com//manage-driver/submitDriver',
+                                                                        'https://me-food-api.onrender.com/manage-driver/submitDriver',
                                                                         {
                                                                             method: 'POST',
                                                                             headers: {

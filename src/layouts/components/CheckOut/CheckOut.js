@@ -123,7 +123,7 @@ function CheckOut() {
         if (DonHang.hinhthuc === '' || DonHang.huyen === '' || DonHang.xa === '' || DonHang.tinh === '')
             alert('Vui lòng điền đủ thông tin');
         else
-            fetch('https://me-food-api.onrender.com//checkout/order', {
+            fetch('https://me-food-api.onrender.com/checkout/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

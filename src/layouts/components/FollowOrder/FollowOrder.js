@@ -22,7 +22,7 @@ function FollowOrder() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 4) {
-            fetch(`https://me-food-api.onrender.com//follow-order/getDonHang/${id}`, {
+            fetch(`https://me-food-api.onrender.com/follow-order/getDonHang/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function FollowOrder() {
     const [keyIndex, setKeyIndex] = useState(-1);
 
     const hanldeOnClickDetail = (pdh) => {
-        fetch('https://me-food-api.onrender.com//follow-order/getTenKH', {
+        fetch('https://me-food-api.onrender.com/follow-order/getTenKH', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function FollowOrder() {
             .then((data) => {
                 setName(data);
             });
-        fetch('https://me-food-api.onrender.com//follow-order/getDetail', {
+        fetch('https://me-food-api.onrender.com/follow-order/getDetail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ function FollowOrder() {
                                                             className={cx('more')}
                                                             onClick={() => {
                                                                 fetch(
-                                                                    'https://me-food-api.onrender.com//follow-order/deleteOrder',
+                                                                    'https://me-food-api.onrender.com/follow-order/deleteOrder',
                                                                     {
                                                                         method: 'POST',
                                                                         headers: {
@@ -270,7 +270,7 @@ function FollowOrder() {
                                                     className="btn btn-primary btn-block mb-4"
                                                     style={{ backgroundColor: 'var(--primary-color)' }}
                                                     onClick={() => {
-                                                        fetch('https://me-food-api.onrender.com//follow-order/submit', {
+                                                        fetch('https://me-food-api.onrender.com/follow-order/submit', {
                                                             method: 'POST',
                                                             headers: {
                                                                 'Content-Type': 'application/json',

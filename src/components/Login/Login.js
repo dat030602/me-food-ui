@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 
 function Login({ children, login = false, name = '', ...props }) {
     const handleLogout = () => {
-        fetch('https://me-food-api.onrender.com//login/logout', {
+        fetch('https://me-food-api.onrender.com/login/logout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

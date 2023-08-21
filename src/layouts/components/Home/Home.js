@@ -12,7 +12,7 @@ function Home({ children }) {
     const [dataHor, setDataHor] = useState({});
     const [dataVer, setDataVer] = useState({});
     useEffect(() => {
-        fetch('https://me-food-api.onrender.com//home/getBranch1', {
+        fetch('https://me-food-api.onrender.com/home/getBranch1', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ function Home({ children }) {
                 return res.json();
             })
             .then((data) => setDataHor(data));
-        fetch('https://me-food-api.onrender.com//home/getBranch2', {
+        fetch('https://me-food-api.onrender.com/home/getBranch2', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

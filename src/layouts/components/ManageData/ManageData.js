@@ -32,7 +32,7 @@ function ManageData() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 1)
-            fetch(`https://me-food-api.onrender.com//manage-data/get1`, {
+            fetch(`https://me-food-api.onrender.com/manage-data/get1`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function ManageData() {
             if (indexSub === index) refLink.current[indexSub].style.display = 'block';
             else refLink.current[indexSub].style.display = 'none';
         });
-        fetch(`https://me-food-api.onrender.com//manage-data/get${index + 1}`, {
+        fetch(`https://me-food-api.onrender.com/manage-data/get${index + 1}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ function ManageData() {
             });
     };
     const handleOnChangeSort = (e) => {
-        fetch(`https://me-food-api.onrender.com//manage-data/get2`, {
+        fetch(`https://me-food-api.onrender.com/manage-data/get2`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ function ManageData() {
                             <h1>Thống kê số lượng đơn hàng</h1>
                             <select
                                 onChange={(e) => {
-                                    fetch(`https://me-food-api.onrender.com//manage-data/get1`, {
+                                    fetch(`https://me-food-api.onrender.com/manage-data/get1`, {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',
@@ -201,7 +201,7 @@ function ManageData() {
                             <h1>Tổng doanh thu</h1>
                             <select
                                 onChange={(e) => {
-                                    fetch(`https://me-food-api.onrender.com//manage-data/get3`, {
+                                    fetch(`https://me-food-api.onrender.com/manage-data/get3`, {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',

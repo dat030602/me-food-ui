@@ -17,7 +17,7 @@ function Item({ children, data = {}, keyIndex = 0 }) {
     const [comment, setComment] = useState();
 
     useEffect(() => {
-        fetch(`https://me-food-api.onrender.com//restaurant/getComment/${data.MaThucDon}`, {
+        fetch(`https://me-food-api.onrender.com/restaurant/getComment/${data.MaThucDon}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function Item({ children, data = {}, keyIndex = 0 }) {
     }, []);
 
     const handleOnClickDelete = () => {
-        fetch(`https://me-food-api.onrender.com//branch/delete/${data.MaMonAn}`, {
+        fetch(`https://me-food-api.onrender.com/branch/delete/${data.MaMonAn}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ function Item({ children, data = {}, keyIndex = 0 }) {
     };
     const handleOnClickUpdatePrice = () => {
         console.log(data.MaMonAn);
-        fetch(`https://me-food-api.onrender.com//branch/updatePrice`, {
+        fetch(`https://me-food-api.onrender.com/branch/updatePrice`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ function Item({ children, data = {}, keyIndex = 0 }) {
         });
     };
     const handleOnClickSaleOff = () => {
-        fetch(`https://me-food-api.onrender.com//branch/saleoff/${data.MaMonAn}`, {
+        fetch(`https://me-food-api.onrender.com/branch/saleoff/${data.MaMonAn}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ function Item({ children, data = {}, keyIndex = 0 }) {
         });
     };
     const handleOnClickUpdateName = () => {
-        fetch(`https://me-food-api.onrender.com//branch/updateName/${data.MaMonAn}`, {
+        fetch(`https://me-food-api.onrender.com/branch/updateName/${data.MaMonAn}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

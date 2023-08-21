@@ -20,7 +20,7 @@ function ListCoop() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 1)
-            fetch(`https://me-food-api.onrender.com//list-coop/getNotNull`, {
+            fetch(`https://me-food-api.onrender.com/list-coop/getNotNull`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ function ListCoop() {
                                         type="radio"
                                         name="select"
                                         onClick={() => {
-                                            fetch(`https://me-food-api.onrender.com//list-coop/getNull`, {
+                                            fetch(`https://me-food-api.onrender.com/list-coop/getNull`, {
                                                 method: 'GET',
                                                 headers: {
                                                     'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ function ListCoop() {
                                         type="radio"
                                         name="select"
                                         onClick={() => {
-                                            fetch(`https://me-food-api.onrender.com//list-coop/getNotNull`, {
+                                            fetch(`https://me-food-api.onrender.com/list-coop/getNotNull`, {
                                                 method: 'GET',
                                                 headers: {
                                                     'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function ListCoop() {
                                         type="radio"
                                         name="select"
                                         onClick={() => {
-                                            fetch(`https://me-food-api.onrender.com//list-coop/getDeadline`, {
+                                            fetch(`https://me-food-api.onrender.com/list-coop/getDeadline`, {
                                                 method: 'GET',
                                                 headers: {
                                                     'Content-Type': 'application/json',
