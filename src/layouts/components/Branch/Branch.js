@@ -19,7 +19,7 @@ function Branch({ keyIndex = 0 }) {
     const [Status, setStatus] = useState('');
     //const [name, setName] = useState();
     const handleOnClickUpdateStoreName = () => {
-        fetch(`http://localhost:5000/branch/updateStoreName`, {
+        fetch(`https://me-food-api.onrender.com//branch/updateStoreName`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -41,7 +41,7 @@ function Branch({ keyIndex = 0 }) {
             });
     };
     const handleOnClickUpdateStoreOpenTime = () => {
-        fetch(`http://localhost:5000/branch/updateStoreOpenTime`, {
+        fetch(`https://me-food-api.onrender.com//branch/updateStoreOpenTime`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -55,7 +55,7 @@ function Branch({ keyIndex = 0 }) {
         });
     };
     const handleOnClickUpdateStoreCloseTime = () => {
-        fetch(`http://localhost:5000/branch/updateStoreCloseTime`, {
+        fetch(`https://me-food-api.onrender.com//branch/updateStoreCloseTime`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -69,7 +69,7 @@ function Branch({ keyIndex = 0 }) {
         });
     };
     const handleOnClickUpdateStoreStatus = () => {
-        fetch(`http://localhost:5000/branch/updateStoreStatus`, {
+        fetch(`https://me-food-api.onrender.com//branch/updateStoreStatus`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -85,7 +85,7 @@ function Branch({ keyIndex = 0 }) {
     useEffect(() => {
         if (localStorage.getItem('roll') == 3 && localStorage.getItem('ma') == id) {
             const abortController = new AbortController();
-            fetch(`http://localhost:5000/branch/getMenu/${id}`, {
+            fetch(`https://me-food-api.onrender.com//branch/getMenu/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

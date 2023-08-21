@@ -12,7 +12,7 @@ function Item({ children, data = {}, order = false }) {
     const [data0, setData0] = useState();
     // const handleOnClickOption = () => {
     //     const abortController = new AbortController();
-    //     fetch(`http://localhost:5000/restaurant/getOption/${data.MaMonAn}`, {
+    //     fetch(`https://me-food-api.onrender.com//restaurant/getOption/${data.MaMonAn}`, {
     //         method: 'GET',
     //         headers: {
     //             'Content-Type': 'application/json',

@@ -60,7 +60,7 @@ function Register() {
     };
 
     const RegisterKhachHang = () => {
-        fetch('http://localhost:5000/register/customer', {
+        fetch('https://me-food-api.onrender.com//register/customer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -140,7 +140,7 @@ function Register() {
     };
 
     const RegisterTaiXe = () => {
-        fetch('http://localhost:5000/register/driver', {
+        fetch('https://me-food-api.onrender.com//register/driver', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -214,7 +214,7 @@ function Register() {
     };
 
     const RegisterDoiTac = () => {
-        fetch('http://localhost:5000/register/coop', {
+        fetch('https://me-food-api.onrender.com//register/coop', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

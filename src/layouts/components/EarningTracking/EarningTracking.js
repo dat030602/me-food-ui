@@ -25,7 +25,7 @@ function EarningTracking() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 2) {
-            fetch(`http://localhost:5000/earning-tracking/getThuNhap/${id}`, {
+            fetch(`https://me-food-api.onrender.com//earning-tracking/getThuNhap/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ function EarningTracking() {
                 .then((data) => {
                     setData(data);
                 });
-            fetch(`http://localhost:5000/earning-tracking/getThongKe/${id}`, {
+            fetch(`https://me-food-api.onrender.com//earning-tracking/getThongKe/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

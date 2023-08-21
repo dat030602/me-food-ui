@@ -8,7 +8,7 @@ Mở [http://localhost:3000](http://localhost:3000) để kiểm tra.
 ## `Trong backend`
 
 Khởi động AIP để fetch
-Mở [http://localhost:5000](http://localhost:5000) để kiểm tra.
+Mở [https://me-food-api.onrender.com/](https://me-food-api.onrender.com/) để kiểm tra.
 
 ### `Ghi chú`
 

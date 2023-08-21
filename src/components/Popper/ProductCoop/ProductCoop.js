@@ -21,7 +21,7 @@ function ProductCoop({ children, hint = false, title, addr, data = {} }) {
     const handleOnClickAdd = () => {
         var select = document.getElementById('State');
         var value = select.options[select.selectedIndex].value;
-        fetch(`http://localhost:5000/branch/add/${data[0].MaThucDon}`, {
+        fetch(`https://me-food-api.onrender.com//branch/add/${data[0].MaThucDon}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

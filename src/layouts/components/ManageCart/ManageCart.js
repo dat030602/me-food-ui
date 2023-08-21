@@ -26,7 +26,7 @@ function ManageCart() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 3)
-            fetch(`http://localhost:5000/manage-cart/getCarts/${id}`, {
+            fetch(`https://me-food-api.onrender.com//manage-cart/getCarts/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function ManageCart() {
 
     const handleOnClick = (slug) => {
         setTimeout(() => {
-            fetch(`http://localhost:5000/manage-cart/getDetailCart/${slug}`, {
+            fetch(`https://me-food-api.onrender.com//manage-cart/getDetailCart/${slug}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ function ManageCart() {
                 .then((data) => setDataCustomer(data));
         }, 100);
         setTimeout(() => {
-            fetch(`http://localhost:5000/manage-cart/products/${slug}`, {
+            fetch(`https://me-food-api.onrender.com//manage-cart/products/${slug}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ function ManageCart() {
                                                         <td
                                                             className={cx('submit')}
                                                             onClick={() => {
-                                                                fetch('http://localhost:5000/manage-cart/submit', {
+                                                                fetch('https://me-food-api.onrender.com//manage-cart/submit', {
                                                                     method: 'POST',
                                                                     headers: {
                                                                         'Content-Type': 'application/json',
@@ -187,7 +187,7 @@ function ManageCart() {
                                                                 className={cx('submit')}
                                                                 onClick={() => {
                                                                     fetch(
-                                                                        'http://localhost:5000/manage-cart/deleteOrder',
+                                                                        'https://me-food-api.onrender.com//manage-cart/deleteOrder',
                                                                         {
                                                                             method: 'POST',
                                                                             headers: {

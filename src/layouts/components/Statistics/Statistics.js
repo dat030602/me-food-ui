@@ -13,7 +13,7 @@ function Statistics() {
     const [data2, setData2] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/statistics/getOrder/${id}`, {
+        fetch(`https://me-food-api.onrender.com//statistics/getOrder/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ function Statistics() {
             .then((data) => {
                 setData(data);
             });
-        fetch(`http://localhost:5000/statistics/getUnprocessOrder/${id}`, {
+        fetch(`https://me-food-api.onrender.com//statistics/getUnprocessOrder/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

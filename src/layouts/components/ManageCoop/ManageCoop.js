@@ -34,7 +34,7 @@ function ManageCoop() {
 
     useEffect(() => {
         if (localStorage.getItem('roll') == 1)
-            fetch(`http://localhost:5000/manage-coop/get1`, {
+            fetch(`https://me-food-api.onrender.com//manage-coop/get1`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ function ManageCoop() {
             if (indexSub === index) refLink.current[indexSub].style.display = 'block';
             else refLink.current[indexSub].style.display = 'none';
         });
-        fetch(`http://localhost:5000/manage-coop/get${index + 1}`, {
+        fetch(`https://me-food-api.onrender.com//manage-coop/get${index + 1}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -144,7 +144,7 @@ function ManageCoop() {
                             <h1>Thống kê lượng khách hàng</h1>
                             <select
                                 onChange={(e) => {
-                                    fetch(`http://localhost:5000/manage-coop/get2`, {
+                                    fetch(`https://me-food-api.onrender.com//manage-coop/get2`, {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',
@@ -264,7 +264,7 @@ function ManageCoop() {
                             <h1>Thống kê tổng hoa hồng</h1>
                             <select
                                 onChange={(e) => {
-                                    fetch(`http://localhost:5000/manage-coop/get5`, {
+                                    fetch(`https://me-food-api.onrender.com//manage-coop/get5`, {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ function Restaurant() {
     const [data0, setData0] = useState();
     useEffect(() => {
         const abortController = new AbortController();
-        fetch(`http://localhost:5000/restaurant/getName/${id}`, {
+        fetch(`https://me-food-api.onrender.com//restaurant/getName/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function Restaurant() {
     const [rating, setRating] = useState();
     useEffect(() => {
         if (data) {
-            fetch(`http://localhost:5000/restaurant/getMenu/${data[0].MaThucDon}`, {
+            fetch(`https://me-food-api.onrender.com//restaurant/getMenu/${data[0].MaThucDon}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function Restaurant() {
                     return res.json();
                 })
                 .then((data0) => setData0(data0));
-            fetch(`http://localhost:5000/restaurant/getComment/${data[0].MaThucDon}`, {
+            fetch(`https://me-food-api.onrender.com//restaurant/getComment/${data[0].MaThucDon}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

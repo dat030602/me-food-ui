@@ -9,7 +9,7 @@ function Restaurants() {
     const [dataHor1, setDataHor1] = useState({});
     const [dataHor2, setDataHor2] = useState({});
     useEffect(() => {
-        fetch('http://localhost:5000/home/getBranch1', {
+        fetch('https://me-food-api.onrender.com//home/getBranch1', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ function Restaurants() {
                 return res.json();
             })
             .then((data) => setDataHor1(data));
-        fetch('http://localhost:5000/home/getBranch2', {
+        fetch('https://me-food-api.onrender.com//home/getBranch2', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

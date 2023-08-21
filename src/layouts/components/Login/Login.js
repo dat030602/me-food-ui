@@ -12,7 +12,7 @@ function Login() {
     const refUser = useRef();
     const refPassword = useRef();
     const handleSubmit = async (e) => {
-        fetch('http://localhost:5000/login', {
+        fetch('https://me-food-api.onrender.com//login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
